@@ -69,6 +69,6 @@ You also can use CSS to set width and height of the `<div>`.
     })
 
 Avoiding `<img>` to be cut at the bottom,  
-you can write like above.
+you can write like above.  
 如果你希望`<img>`依然居中，但是不要裁剪掉最下面的部分，  
 就可以像上面这样设置。
