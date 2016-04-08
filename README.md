@@ -44,4 +44,19 @@ In your `<body>`, use `<div>` to wrap the `<img>` like this:
       <img class="demo-img" src="yourImg.png" />
     </div>
 # Options
-Options
+如果你有更多需求，也可以自定义设置：
+
+1、调整div大小：
+    $('demo-img').isacover({
+      frameWidth:160,
+      frameHeight:320
+    })
+如果你没有设置过`<div>`的高宽，那么高宽默认会是100*100，  
+你当然也可以用CSS来设置这个`<div>`的高宽。
+
+2、调整图片位置：
+    $('demo-img').isacover({
+      bottom:0
+    })
+如果你希望图片依然居中，但是不要裁剪掉最下面的部分，  
+就可以像上面这样设置。
