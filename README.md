@@ -51,7 +51,7 @@ If you want do more:
 1、adjust `<div>`:  
 1、调整`<div>`大小：  
 
-    $('demo-img').isacover({
+    $('.demo-img').isacover({
       frameWidth:160,
       frameHeight:320
     })
