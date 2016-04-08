@@ -8,7 +8,7 @@
       bottom:'default',
       left:'default',
       right:'default',
-    }
+    };
 
     params = params || {};
     var originalParams = {};
@@ -36,61 +36,84 @@
         }
     }
 
-    $(this).css({position:'absolute'})
-    var frameDiv = $(this).parent()
-    frameDiv.css({position:'relative',overflow:'hidden'})
+    $(this).css({position:'absolute'});
+    var frameDiv = $(this).parent();
+    var frameDivDeafultPosition = 'relative';
+    if (frameDiv[0].style.position != '') {frameDivDeafultPositio = frameDiv[0].style.position};
+    frameDiv.css({position:frameDivDeafultPosition,overflow:'hidden'});
 
-    var frameWidth,frameHeight
+    var frameWidth,frameHeight;
 
     if (params.frameWidth === 'default') {
       if (frameDiv[0].style.width === '') {
-        frameWidth = 100
-        frameDiv.width(frameWidth)
+        frameWidth = 100;
+        frameDiv.width(frameWidth);
       } else {
-        frameWidth = frameDiv.width()
-      }
+        frameWidth = frameDiv.width();
+      };
     } else {
-      frameWidth = params.frameWidth
-      frameDiv.width(frameWidth)
-    }
+      frameWidth = params.frameWidth;
+      frameDiv.width(frameWidth);
+    };
 
     if (params.frameHeight === 'default') {
       if (frameDiv[0].style.height === '') {
-        frameHeight = 100
-        frameDiv.height(frameHeight)
+        frameHeight = 100;
+        frameDiv.height(frameHeight);
       } else {
-        frameHeight = frameDiv.height()
+        frameHeight = frameDiv.height();
       }
     } else {
-      frameHeight = params.frameHeight
-      frameDiv.height(frameHeight)
+      frameHeight = params.frameHeight;
+      frameDiv.height(frameHeight);
     }
-    var frameRatio = frameWidth / frameHeight
+    var frameRatio = frameWidth / frameHeight;
 
 
 
     $(this).load(function() {
-        var imgRatio = $(this).width()/$(this).height()
+        var imgRatio = $(this).width()/$(this).height();
 
-        var centerLeft = (frameDiv.width() - frameDiv.height() * imgRatio) / 2
-        var centerBottom = (frameDiv.height() - frameDiv.width() / imgRatio) / 2
+
 
         if (imgRatio <= frameRatio) {
-            $(this).css({
-                width:'100%',
-                height:'auto',
-                left:0,
-                bottom:centerBottom
-            });
+          var top,bottom;
+          $(this).css({
+              width:'100%',
+              height:'auto',
+              left:0,
+          });
+          if (params.top === 'default') {
+            if (params.bottom === 'default') {
+              bottom = (frameDiv.height() - frameDiv.width() / imgRatio) / 2;
+            } else {
+              bottom = params.bottom;
+            }
+            $(this).css({bottom:bottom});
+          } else {
+            top = params.top;
+            $(this).css({top:top});
+          };
         } else {
-            $(this).css({
-                width:'auto',
-                height:'100%',
-                left:centerLeft,
-                bottom:0
-            });
+          var left,right;
+          $(this).css({
+              width:'auto',
+              height:'100%',
+              top:0
+          });
+          if (params.left === 'default') {
+            if (params.right === 'default') {
+              right = (frameDiv.width() - frameDiv.height() * imgRatio) / 2;
+            } else {
+              right = params.right;
+            }
+            $(this).css({right:right});
+          } else {
+            left = params.left;
+            $(this).css({left:left});
+          };
         };
     });
 
-  }
+  };
 })(jQuery);
