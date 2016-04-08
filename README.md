@@ -27,7 +27,15 @@ Finally, you can also use options to adjust position of the `<img>`.
     $('demo-img').isacover()
 Well Done! We almost finish our work!  
 But we should link the jQuery and A-Cover file.  
+
 一行代码就够了，  
 但是在这之前，需要引入 jQuery 和 A-Cover 文件
+
+<head>
+  ...
+  <script src="yourPath/jquery-x.x.x.min.js"></script>
+  <script src="yourPath/jquery.acover-1.0.0.js"></script>
+  ...
+</head>
 # Options
 Options
