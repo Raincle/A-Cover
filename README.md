@@ -1,10 +1,10 @@
 # A-Cover
-A-Cover
+A-Cover help you layout an `<img>` into a `<div>`.
 
 # Why?
 When I was wrapping an `<img>` into a `<div>`,  
 I found it's tedious to set the `<img>`'s width, height...  
-And, it's a waste of time to adjust the `<img>` to fill the `<div>`.  
+And, it's a waste of time to adjust the `<img>` to fill out the `<div>`.  
 So, A-Cover comes here to help us.  
 
 当我想要把一个`<img>`元素放到一个`<div>`中时，  
