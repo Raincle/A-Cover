@@ -56,9 +56,9 @@ If you want do more:
       frameHeight:320
     })
 
-`<div>`'s width and height will be 100*100 if you didn't set before,  
+`<div>`'s width and height will be 100×100 if you didn't set before,  
 You also can use CSS to set width and height of the `<div>`.  
-如果你没有设置过`<div>`的高宽，那么高宽默认会是100*100，  
+如果你没有设置过`<div>`的高宽，那么高宽默认会是100×100，  
 你当然也可以用CSS来设置这个`<div>`的高宽。
 
 2、adjust `<img>`'s position:  
