@@ -48,6 +48,7 @@ In your `<body>`, use `<div>` to wrap the `<img>` like this:
 如果你有更多需求，也可以自定义设置：
 
 1、调整div大小：  
+
     $('demo-img').isacover({
       frameWidth:160,
       frameHeight:320
@@ -56,6 +57,7 @@ In your `<body>`, use `<div>` to wrap the `<img>` like this:
 你当然也可以用CSS来设置这个`<div>`的高宽。
 
 2、调整图片位置：  
+
     $('demo-img').isacover({
       bottom:0
     })
