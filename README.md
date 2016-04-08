@@ -40,6 +40,8 @@ But we should link the jQuery and A-Cover file.
 
 In your `<body>`, use `<div>` to wrap the `<img>` like this:  
 并且在需要的地方用`<div>`包裹住`<img>`，像这样：  
-    <div><img class='demo-img' src='yourImg.png' /></div>
+    <div>
+      <img class='demo-img' src='yourImg.png' />
+    </div>
 # Options
 Options
