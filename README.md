@@ -34,7 +34,7 @@ But we should link the jQuery and A-Cover files before using this magic.
     <head>
       ...
       <script src="yourPath/jquery-x.x.x.min.js"></script>
-      <script src="yourPath/jquery.acover-1.0.0.js"></script>
+      <script src="yourPath/jquery.acover-1.0.0.min.js"></script>
       ...
     </head>
 
@@ -45,21 +45,30 @@ In your `<body>`, use `<div>` to wrap the `<img>` like this:
       <img class="demo-img" src="yourImg.png" />
     </div>
 # Options
+If you want do more:  
 如果你有更多需求，也可以自定义设置：
 
-1、调整div大小：  
+1、adjust `<div>`:  
+1、调整`<div>`大小：  
 
     $('demo-img').isacover({
       frameWidth:160,
       frameHeight:320
     })
+
+`<div>`'s width and height will be 100*100 if you didn't set before,  
+You also can use CSS to set width and height of the `<div>`.  
 如果你没有设置过`<div>`的高宽，那么高宽默认会是100*100，  
 你当然也可以用CSS来设置这个`<div>`的高宽。
 
-2、调整图片位置：  
+2、adjust `<img>`'s position:  
+2、调整`<img>`位置：  
 
     $('demo-img').isacover({
       bottom:0
     })
-如果你希望图片依然居中，但是不要裁剪掉最下面的部分，  
+
+Avoiding `<img>` to be cut at the bottom,  
+you can write like above.
+如果你希望`<img>`依然居中，但是不要裁剪掉最下面的部分，  
 就可以像上面这样设置。
