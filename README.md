@@ -40,13 +40,14 @@ But we should link the jQuery and A-Cover files before using this magic.
 
 In your `<body>`, use `<div>` to wrap the `<img>` like this:  
 并且在需要的地方用`<div>`包裹住`<img>`，像这样：  
+
     <div>
       <img class="demo-img" src="yourImg.png" />
     </div>
 # Options
 如果你有更多需求，也可以自定义设置：
 
-1、调整div大小：
+1、调整div大小：  
     $('demo-img').isacover({
       frameWidth:160,
       frameHeight:320
@@ -54,7 +55,7 @@ In your `<body>`, use `<div>` to wrap the `<img>` like this:
 如果你没有设置过`<div>`的高宽，那么高宽默认会是100*100，  
 你当然也可以用CSS来设置这个`<div>`的高宽。
 
-2、调整图片位置：
+2、调整图片位置：  
     $('demo-img').isacover({
       bottom:0
     })
