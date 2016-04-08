@@ -1,6 +1,7 @@
 # A-Cover
-A-Cover help you layout an `<img>` at the center of a `<div>`, and fill it out.  
-A-Cover 帮你把`<img>`置入`<div>`中心，并充满它。
+A-Cover is a jQuery plugin that  
+help you layout an `<img>` at the center of a `<div>`, and fill it out.  
+A-Cover 是一个帮你把`<img>`置入`<div>`中心，并充满它的 jQuery 插件。
 
 # Why?
 When I was wrapping an `<img>` into a `<div>`,  
