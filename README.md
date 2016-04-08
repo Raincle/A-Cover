@@ -19,12 +19,15 @@ the `<img>` will be scaled with origin ratio, and cut.
 Finally, you can also use options to adjust position of the `<img>`.  
 
 当我们使用了 A-Cover 之后，  
-`<img>`会自动充满`<div>`并位于中心位置，  
+`<img>`会按比例自动充满`<div>`并位于中心位置，  
 完全没有压扁或拉伸`<img>`，多余的部分会适当裁剪。  
 最后，你也可以通过设置，来调整`<img>`的位置。  
 
 # Usage
-Usage
-
+    $('demo-img').isacover()
+Well Done! We almost finish our work!  
+But we should link the jQuery and A-Cover file.  
+一行代码就够了，  
+但是在这之前，需要引入 jQuery 和 A-Cover 文件
 # Options
 Options
