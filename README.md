@@ -25,11 +25,11 @@ Finally, you can also use options to adjust position of the `<img>`.
 
 # Usage
     $('demo-img').isacover()
-Well Done! We almost finish our work!  
-But we should link the jQuery and A-Cover file.  
+Well Done! We just write XXX is a cover!  
+But we should link the jQuery and A-Cover files before using this magic.  
 
 一行代码就够了，但是在这之前，  
-还需要引入 jQuery 和 A-Cover 文件
+还需要引入 jQuery 和 A-Cover 文件。
 
     <head>
       ...
@@ -41,7 +41,7 @@ But we should link the jQuery and A-Cover file.
 In your `<body>`, use `<div>` to wrap the `<img>` like this:  
 并且在需要的地方用`<div>`包裹住`<img>`，像这样：  
     <div>
-      <img class='demo-img' src='yourImg.png' />
+      <img class="demo-img" src="yourImg.png" />
     </div>
 # Options
 Options
