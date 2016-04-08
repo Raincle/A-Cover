@@ -31,7 +31,7 @@ But we should link the jQuery and A-Cover file.
 一行代码就够了，  
 但是在这之前，需要引入 jQuery 和 A-Cover 文件
 
-<head>
+    <head>
   ...
   <script src="yourPath/jquery-x.x.x.min.js"></script>
   <script src="yourPath/jquery.acover-1.0.0.js"></script>
