@@ -38,9 +38,9 @@
 
     $(this).css({position:'absolute'});
     var frameDiv = $(this).parent();
-    var frameDivDeafultPosition = 'relative';
-    if (frameDiv[0].style.position != '') {frameDivDeafultPositio = frameDiv[0].style.position};
-    frameDiv.css({position:frameDivDeafultPosition,overflow:'hidden'});
+    var frameDivDefaultPosition = 'relative';
+    if (frameDiv[0].style.position != '') {frameDivDefaultPosition = frameDiv[0].style.position};
+    frameDiv.css({position:frameDivDefaultPosition,overflow:'hidden'});
 
     var frameWidth,frameHeight;
 
